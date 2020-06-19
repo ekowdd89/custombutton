@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+import CustomButton from "./components/CustomeButton";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CustomButton onPress={()=> alert(`Demo 1`) } title="Demo 1" />
+      <CustomButton onPress={()=> alert(`Demo 2`) } title="Demo 2" />
+      <CustomButton onPress={()=> alert(`Demo 3`) } title="Demo 3" />
     </View>
   );
 }
